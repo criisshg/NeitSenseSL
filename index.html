@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MyPersonalShopper – Wireframes MVP</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f4f4f6;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .phone {
+      width: 280px;
+      background: white;
+      border-radius: 24px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .phone h2 {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4a4aff;
+    }
+
+    .section {
+      margin-bottom: 16px;
+    }
+
+    label {
+      font-size: 12px;
+      color: #666;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    input, .box {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-size: 13px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      border-radius: 12px;
+      background: #ececff;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .button {
+      margin-top: 20px;
+      background: #4a4aff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .small-btn {
+      flex: 1;
+      font-size: 11px;
+      padding: 6px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .keep {
+      background: #d4f7d4;
+    }
+
+    .return {
+      background: #ffd6d6;
+    }
+
+    .rating {
+      margin-top: 6px;
+      font-size: 12px;
+      color: #ffaa00;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>MyPersonalShopper – Wireframes MVP</h1>
+
+<div class="container">
+
+  <!-- ONBOARDING -->
+  <div class="phone">
+    <h2>Crear tu perfil</h2>
+
+    <div class="section">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre">
+    </div>
+
+    <div class="section">
+      <label>Email</label>
+      <input type="email" placeholder="correo@email.com">
+    </div>
+
+    <div class="section">
+      <label>Contraseña</label>
+      <input type="password">
+    </div>
+
+    <div class="section">
+      <label>Preferencias</label>
+      <div class="tags">
+        <div class="tag">Clásico</div>
+        <div class="tag">Boho</div>
+        <div class="tag">Minimalista</div>
+        <div class="tag">Sport</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Talla</label>
+      <input type="text" value="XL">
+    </div>
+
+    <button class="button">Siguiente</button>
+  </div>
+
+  <!-- COMANDA -->
+  <div class="phone">
+    <h2>Nueva comanda</h2>
+
+    <div class="section">
+      <label>Tu Personal Shopper</label>
+      <div class="box">Juli Alafia</div>
+    </div>
+
+    <div class="section">
+      <label>Dirección de envío</label>
+      <div class="box">C/ Balmes 123, BCN</div>
+    </div>
+
+    <div class="section">
+      <label>Método de pago</label>
+      <div class="box">VISA **** 1234</div>
+    </div>
+
+    <div class="section">
+      <label>Resumen</label>
+      <div class="box">Comanda personalizada (5 prendas)</div>
+    </div>
+
+    <button class="button">Realizar comanda</button>
+  </div>
+
+  <!-- DEVOLUCIÓN -->
+  <div class="phone">
+    <h2>¿Qué te quedas?</h2>
+
+    <div class="product">
+      Pantalón texano – 35€
+      <div class="product-actions">
+        <button class="small-btn keep">Me quedo</button>
+        <button class="small-btn return">Devuelvo</button>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+
+    <div class="product">
+      Camiseta blanca – 17€
+      <div class="product-actions">
+        <button class="small-btn keep">Me quedo</button>
+        <button class="small-btn return">Devuelvo</button>
+      </div>
+      <div class="rating">★★★★☆</div>
+    </div>
+
+    <button class="button">Confirmar devolución</button>
+  </div>
+
+</div>
+
+</body>
+</html>

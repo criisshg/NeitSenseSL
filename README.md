@@ -1,4 +1,4 @@
-# NovaSoftSolutionsSL_EP
+# NeitSense
 
 MyPersonalShopper – Proyecto de Ingeniería del Software (UAB 2025-2026)
 Descripción general
